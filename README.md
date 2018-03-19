@@ -1,2 +1,2 @@
-# insurance
+# Insurance
 Portal for Insurance management
