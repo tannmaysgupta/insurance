@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Insurance Management Portal</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Management Portal</a>
+		<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+		<ul class="navbar-nav px-3">
+			<li class="nav-item">
+				<button class="btn btn-secondary" href="#">Sign out</button>
+			</li>
+		</ul>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+				<div class="sidebar-sticky">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">
+								Dashboard
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="customer.html">
+								Customers
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="policies.html">
+								Policies
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								Claims
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="reports.html">
+								Reports
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								Commision
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- MAIN STARTS HERE -->
+			<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+					<div class="row">
+						<h1>Clients</h1>
+					</div>
+				</div>
+				<!-- table -->
+				<div class="table-responsive">
+					<table class="table table-striped table-sm">
+						<thead>
+							<tr>
+								<th>CustID</th>
+								<th>Name</th>
+								<th>Phone Number</th>
+								<th>Claim ID</th>
+								<th>Due Date</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1,001</td>
+								<td>Ajay Kumar</td>
+								<td>9910887062</td>
+								<td>1032</td>
+								<td>02/03/2018</td>
+							</tr>
+							<tr>
+								<td>1,002</td>
+								<td>Sunil Gupta</td>
+								<td>9958809195</td>
+								<td>1065</td>
+								<td>06/08/2018</td>
+							</tr>
+							<tr>
+								<td>1,003</td>
+								<td>Adesh Gupta</td>
+								<td>9811221503</td>
+								<td>1011</td>
+								<td>08/04/2019</td>
+							</tr>
+							<tr>
+								<td>1,004</td>
+								<td>libero sanchez</td>
+								<td>6577894412</td>
+								<td>1069</td>
+								<td>08/05/2018</td>
+							</tr>
+							<tr>
+								<td>1,005</td>
+								<td>Palash Golecha</td>
+								<td>8756124934</td>
+								<td>1100</td>
+								<td>06/04/2018</td>
+							</tr>
+							<tr>
+								<td>1,006</td>
+								<td>Kritika Mishra</td>
+								<td>9843222752</td>
+								<td>1234</td>
+								<td>12/11/2018</td>
+							</tr>
+							<tr>
+								<td>1,007</td>
+								<td>Rani Singhal</td>
+								<td>9876540321</td>
+								<td>1095</td>
+								<td>24/12/2018</td>
+							</tr>
+							<tr>
+								<td>1,008</td>
+								<td>Sagarika Dantre</td>
+								<td>9638520741</td>
+								<td>1074</td>
+								<td>10/10/2019</td>
+							</tr>
+							<tr>
+								<td>1,009</td>
+								<td>Farhan Ali</td>
+								<td>7854123690</td>
+								<td>1056</td>
+								<td>20/10/2019</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</main>
+
+			<!-- Logout Modal-->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+						<div class="modal-footer">
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+							<a class="btn btn-primary" href="login.html">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous"></script>
+</body>
+
+</html>
