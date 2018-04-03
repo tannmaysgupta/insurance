@@ -19,7 +19,7 @@
 		<input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
 		<ul class="navbar-nav px-3">
 			<li class="nav-item">
-				<button class="btn btn-secondary" href="#">Sign out</button>
+				<a class="btn btn-secondary" href="login.html">Sign Out</a>
 			</li>
 		</ul>
 	</nav>
@@ -44,12 +44,12 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="claims.html">
 								Claims
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">
+							<a class="nav-link" href="reports.html">
 								Reports
 							</a>
 						</li>
@@ -87,7 +87,7 @@
 							<div class="card-header">
 								<i class="fa fa-bar-chart"></i> Bar Chart Example</div>
 							<div class="card-body">
-								<canvas id="myBarChart" width="100%" height="100"></canvas>
+								<canvas id="myBarChart" width="100%" height="45"></canvas>
 							</div>
 							<div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 						</div>
@@ -187,148 +187,15 @@
           </div>
 			</main>
 
-			<!-- Logout Modal-->
-			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-								<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">×</span>
-								</button>
-							</div>
-							<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-							<div class="modal-footer">
-								<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-								<a class="btn btn-primary" href="login.html">Logout</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			
+				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 			  crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 			  crossorigin="anonymous"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 				crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-			<script>
-					var ctx = document.getElementById("myAreaChart");
-					var myChart = new Chart(ctx, {
-							type: 'line',
-							data: {
-									labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-									datasets: [{
-											label: '# of Votes',
-											data: [12, 19, 3, 5, 2, 3],
-											backgroundColor: [
-													'rgba(255, 99, 132, 0.2)',
-													'rgba(54, 162, 235, 0.2)',
-													'rgba(255, 206, 86, 0.2)',
-													'rgba(75, 192, 192, 0.2)',
-													'rgba(153, 102, 255, 0.2)',
-													'rgba(255, 159, 64, 0.2)'
-											],
-											borderColor: [
-													'rgba(255,99,132,1)',
-													'rgba(54, 162, 235, 1)',
-													'rgba(255, 206, 86, 1)',
-													'rgba(75, 192, 192, 1)',
-													'rgba(153, 102, 255, 1)',
-													'rgba(255, 159, 64, 1)'
-											],
-											borderWidth: 1
-									}]
-							},
-							options: {
-									scales: {
-											yAxes: [{
-													ticks: {
-															beginAtZero:true
-													}
-											}]
-									}
-							}
-					});
-					</script>
-				<script>
-						var cty = document.getElementById("myBarChart");
-						var myChart = new Chart(cty, {
-								type: 'bar',
-								data: {
-										labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-										datasets: [{
-												label: '# of Votes',
-												data: [12, 19, 3, 5, 2, 3],
-												backgroundColor: [
-														'rgba(255, 99, 132, 0.2)',
-														'rgba(54, 162, 235, 0.2)',
-														'rgba(255, 206, 86, 0.2)',
-														'rgba(75, 192, 192, 0.2)',
-														'rgba(153, 102, 255, 0.2)',
-														'rgba(255, 159, 64, 0.2)'
-												],
-												borderColor: [
-														'rgba(255,99,132,1)',
-														'rgba(54, 162, 235, 1)',
-														'rgba(255, 206, 86, 1)',
-														'rgba(75, 192, 192, 1)',
-														'rgba(153, 102, 255, 1)',
-														'rgba(255, 159, 64, 1)'
-												],
-												borderWidth: 1
-										}]
-								},
-								options: {
-										scales: {
-												yAxes: [{
-														ticks: {
-																beginAtZero:true
-														}
-												}]
-										}
-								}
-						});
-						</script>
-				<script>
-						var ctz = document.getElementById("myPieChart");
-						var myChart = new Chart(ctz, {
-								type: 'pie',
-								data: {
-										labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-										datasets: [{
-												label: '# of Votes',
-												data: [12, 19, 3, 5, 2, 3],
-												backgroundColor: [
-														'rgba(255, 99, 132, 0.2)',
-														'rgba(54, 162, 235, 0.2)',
-														'rgba(255, 206, 86, 0.2)',
-														'rgba(75, 192, 192, 0.2)',
-														'rgba(153, 102, 255, 0.2)',
-														'rgba(255, 159, 64, 0.2)'
-												],
-												borderColor: [
-														'rgba(255,99,132,1)',
-														'rgba(54, 162, 235, 1)',
-														'rgba(255, 206, 86, 1)',
-														'rgba(75, 192, 192, 1)',
-														'rgba(153, 102, 255, 1)',
-														'rgba(255, 159, 64, 1)'
-												],
-												borderWidth: 1
-										}]
-								},
-								options: {
-										scales: {
-												yAxes: [{
-														ticks: {
-																beginAtZero:true
-														}
-												}]
-										}
-								}
-						});
-						</script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+				<script src="js/main.js"></script>
 </body>
 
 </html>
