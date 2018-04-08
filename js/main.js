@@ -115,3 +115,4 @@ var myChart = new Chart(ctz, {
 $('#LogoutModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
+
